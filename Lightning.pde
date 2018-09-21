@@ -7,11 +7,11 @@ void setup()
   strokeWeight(2);
   background(0);
   size(300,300);
-  noLoop();
+
 }
 void draw()
 {
-  stroke((int)(Math.random() * 197));
+  stroke((int)(Math.random() * 255));
   while(endX <= 300)
   {
   endX = startX + (int)(Math.random()* 9);
@@ -24,6 +24,9 @@ void draw()
 void mousePressed()
 {
   redraw();
- 
+ startX = 0;
+ startY = 150;
+ endX = 0;
+ endY = 150;
 
 }
